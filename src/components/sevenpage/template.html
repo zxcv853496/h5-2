@@ -1,0 +1,37 @@
+<div class="sevenpage">
+    <div class="top">
+        <div class="space">space</div>
+        <div class="right"
+        :class="{'animate__animated animate__fadeIn animate__delay-1s':active}">
+            企業文化
+        </div>
+        <div class="left">
+            <hr
+            :class="{'animate__animated animate__lightSpeedInRight animate__delay-005s':active}">
+            <hr
+            :class="{'animate__animated animate__lightSpeedInRight animate__delay-1s':active}">
+        </div>
+        <div class="canvas"
+        :class="{'animate__animated animate__fadeIn animate__delay-005s':active}"></div>
+    </div>
+    <div class="content">
+        <img src="/H5/2/img/sevenpage/1.jpg" alt=""
+        :class="{'animate__animated animate__fadeInUp animate__delay-005s':active}">
+        <div class="container" v-for="(item, item_index) in data " :key="item.index"
+        :class="delayContent(item_index+10)">
+            {{ item.content }}
+        </div>
+    </div>
+    <div class="bottom">
+        <p
+        :class="{'animate__animated animate__zoomIn animate__delay-015s animate__slow':active}">
+            泳欣設計| YongXin Design
+        </p>
+        <div class="line"
+        :class="{'animate__animated animate__fadeIn animate__delay-005s animate__slow':active}">
+        </div>
+        <div class="line"
+        :class="{'animate__animated animate__fadeIn animate__delay-1s animate__slow':active}">
+        </div>
+    </div>
+</div>

@@ -1,0 +1,52 @@
+<div class="twelvepage">
+    <div class="top">
+        <div class="space">space</div>
+        <div class="right"
+        :class="{'animate__animated animate__fadeIn animate__delay-1s':active}">
+            企業文化
+        </div>
+        <div class="left">
+            <hr
+            :class="{'animate__animated animate__lightSpeedInRight animate__delay-005s':active}">
+            <hr
+            :class="{'animate__animated animate__lightSpeedInRight animate__delay-1s':active}">
+        </div>
+        <div class="canvas"
+        :class="{'animate__animated animate__fadeIn animate__delay-005s':active}"></div>
+    </div>
+    <div class="content">
+        <div class="top-container">
+            <div class="title"
+            :class="{'animate__animated animate__zoomIn animate__delay-005s':active}">
+                UI設計師 (2名)
+            </div>
+            <p
+            :class="{'animate__animated animate__fadeIn animate__delay-010s':active}">
+                10-16k | 北京 | 經驗不限 | 本科學歷以上
+            </p>
+        </div>
+        <hr :class="{'animate__animated animate__zoomIn animate__delay-005s':active}">
+        <div class="bottom-container" v-for =" item in data " :key=" item.index ">
+            <div class="title"
+            :class="{'animate__animated animate__fadeInLeft animate__delay-005s':active}">
+                {{ item.title }}
+            </div>
+            <div class="content" v-for = "(content, index) in item.content" :key=" content.index"
+            :class="{'animate__animated animate__fadeIn animate__delay-012s':active}">
+                {{ index+1 }}.{{ content }}
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <p
+        :class="{'animate__animated animate__zoomIn animate__delay-015s animate__slow':active}">
+            泳欣設計| YongXin Design
+        </p>
+        <div class="line"
+        :class="{'animate__animated animate__fadeIn animate__delay-005s animate__slow':active}">
+        </div>
+        <div class="line"
+        :class="{'animate__animated animate__fadeIn animate__delay-1s animate__slow':active}">
+        </div>
+    </div>
+</div>

@@ -1,0 +1,136 @@
+.thirteenpage{
+    height: 100%;
+    position: relative;
+    >.top{
+        height: 80px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        .space{
+            color: transparent;
+        }
+        .right{
+            
+            line-height: 80px;
+            font-size: 24px;
+            color: $main-color;
+            @media (min-width:768px) {
+                font-size: 42px;
+            }
+        }
+        >.left{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            hr{
+                border: none;
+                background-color: $main-color;
+
+            }
+            hr:nth-child(1){
+                width: 100%;
+                height: 1px;
+
+            }
+            hr:nth-child(2){
+                width: 75%;
+                height: 2px;
+                margin-right: 0;
+            }
+        }
+        >.canvas{
+            left: 0;
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            background-color: $main-color;
+            transform:translate(-50%,20%) rotate(45deg) ;
+        }
+    }
+    >.content{
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 30px;
+        @media (max-width:375px) {
+            margin-top: 10px;
+        }
+        .top-container{
+            div{
+                margin: 5px 0;
+                span{
+                    font-size: 14px;
+                    @media (min-width:700px) {
+                        font-size: 3vmin;
+                    }
+                    a{
+                        color: $main-color;
+                        text-decoration: none;
+                        transition: all .3s;
+                        &:hover{
+                            color: #3d6adbb9;
+                        }
+                    }
+                }
+                span:nth-child(1){
+                    margin-right: 15px;
+                }
+            }
+        }
+        .bottom-container{
+            margin-top: 10px;
+            .a{
+                margin: 0 auto;
+                // width: 200px;
+                height: 40px;
+                line-height: 40px;
+                // border-radius: 24px;
+                background-color: $main-color;
+                position: relative;
+                font-weight: 500;
+                text-align: center;
+                position: relative;
+                a{
+                    color: white;
+                    text-decoration: none;
+                }
+                a:nth-child(2){
+                    color: transparent;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            iframe{
+                border: 1px solid $main-color;
+                width: 100%;
+                height: 40vh;
+            }
+            .map-container{
+                border: 1px solid $main-color;
+                
+            }
+        }
+    }
+    >.bottom{
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        p{
+            margin: 0;
+            font-size: 3vmin;
+            text-align: center;
+        }
+        .line{
+            margin: 5px 0;
+            height: 2px;
+            background-color: $main-color;
+        }
+        .line:nth-child(3){
+            height: 10px;
+        }
+    }
+}

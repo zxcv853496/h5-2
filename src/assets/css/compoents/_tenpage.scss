@@ -1,0 +1,125 @@
+.tenpage{
+    height: 100%;
+    position: relative;
+    >.top{
+        height: 80px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        .space{
+            color: transparent;
+        }
+        .right{
+            
+            line-height: 80px;
+            font-size: 24px;
+            color: $main-color;
+            @media (min-width:768px) {
+                font-size: 42px;
+            }
+        }
+        >.left{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            hr{
+                border: none;
+                background-color: $main-color;
+
+            }
+            hr:nth-child(1){
+                width: 100%;
+                height: 1px;
+
+            }
+            hr:nth-child(2){
+                width: 75%;
+                height: 2px;
+                margin-right: 0;
+            }
+        }
+        >.canvas{
+            left: 0;
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            background-color: $main-color;
+            transform:translate(-50%,20%) rotate(45deg) ;
+        }
+    }
+    >.content{
+        width: 80%;
+        margin: 0 auto;
+        .top-container{
+            display: flex;
+            align-items:stretch;
+            .l-container{
+                width: calc(40% - 10px);
+                img{
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                    object-fit: cover;
+                }
+            }
+            
+            .r-container{
+                width: 60%;
+                margin-left: 10px;
+                img{
+                    width: 100%;
+                    display: block;
+                }
+                .r-p{
+                    background-color: $main-color;
+                    padding: 5px 20px;
+                    p{
+                        color: white;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+        .bottom-container{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            .l-container{
+                width: 60%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .r-container{
+                width: 38%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+    >.bottom{
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        p{
+            margin: 0;
+            font-size: 3vmin;
+            text-align: center;
+        }
+        .line{
+            margin: 5px 0;
+            height: 2px;
+            background-color: $main-color;
+        }
+        .line:nth-child(3){
+            height: 10px;
+        }
+    }
+}

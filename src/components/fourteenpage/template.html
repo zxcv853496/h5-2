@@ -1,0 +1,62 @@
+<div class="fourteenpage">
+    <div class="top">
+        <div class="space">space</div>
+        <div class="right"
+        :class="{'animate__animated animate__fadeIn animate__delay-1s':active}">
+            企業文化
+        </div>
+        <div class="left">
+            <hr
+            :class="{'animate__animated animate__lightSpeedInRight animate__delay-005s':active}">
+            <hr
+            :class="{'animate__animated animate__lightSpeedInRight animate__delay-1s':active}">
+        </div>
+        <div class="canvas"
+        :class="{'animate__animated animate__fadeIn animate__delay-005s':active}"></div>
+    </div>
+    <div class="content">
+        <div>
+            <input name="name" type="text" placeholder="姓名" 
+            :class="{'animate__animated animate__flipInX animate__delay-005s':active}" >
+            <input name="phone" type="text" placeholder="手機"
+            :class="{'animate__animated animate__flipInX animate__delay-007s':active}">
+            <input name="email" type="text" placeholder="信箱"
+            :class="{'animate__animated animate__flipInX animate__delay-009s':active}">
+            <select id="select-value"
+            :class="{'animate__animated animate__flipInX animate__delay-011s':active}">
+                <option v-for=" item in options" :key="item.index">
+                    {{item}}
+                </option>
+            </select>
+            <input name="cooperation" type="text" placeholder="商務合作"
+            :class="{'animate__animated animate__flipInX animate__delay-013s':active}">
+            <div class="recaptcha-container"
+            :class="{'animate__animated animate__flipInX animate__delay-015s':active}">
+                <div
+                    class="g-recaptcha"
+                    data-sitekey="6Lf6BakaAAAAAARjNiUzTxZW6tSWVT5U_FP3uLNc"
+                    data-theme="light" data-size="normal"
+                    data-callback="verify"
+                    data-expired-callback="expired"
+                    data-error-callback="error">
+                </div>
+            </div>  
+            <button
+            :class="{'animate__animated animate__flipInX animate__delay-017s':active}">
+                提交
+            </button>
+        </div>
+    </div>
+    <div class="bottom">
+        <p
+        :class="{'animate__animated animate__zoomIn animate__delay-015s animate__slow':active}">
+            泳欣設計| YongXin Design
+        </p>
+        <div class="line"
+        :class="{'animate__animated animate__fadeIn animate__delay-005s animate__slow':active}">
+        </div>
+        <div class="line"
+        :class="{'animate__animated animate__fadeIn animate__delay-1s animate__slow':active}">
+        </div>
+    </div>
+</div>

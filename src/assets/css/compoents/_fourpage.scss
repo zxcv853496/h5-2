@@ -1,0 +1,127 @@
+.fourpage{
+    height: 100%;
+    position: relative;
+    >.top{
+        height: 80px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        .space{
+            color: transparent;
+        }
+        .right{
+            
+            line-height: 80px;
+            font-size: 24px;
+            color: $main-color;
+            @media (min-width:768px) {
+                font-size: 42px;
+            }
+        }
+        >.left{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            hr{
+                border: none;
+                background-color: $main-color;
+
+            }
+            hr:nth-child(1){
+                width: 100%;
+                height: 1px;
+
+            }
+            hr:nth-child(2){
+                width: 75%;
+                height: 2px;
+                margin-right: 0;
+            }
+        }
+        >.canvas{
+            left: 0;
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            background-color: $main-color;
+            transform:translate(-50%,20%) rotate(45deg) ;
+        }
+    }
+    >.content{
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 30px;
+        >.left{
+            width: 100%;
+            .deeds{
+                .title{
+                    color: white;
+                    background-color: $main-color;
+                    width: 50%;
+                    text-align: center;
+                    padding: 5px 10px 5px 10px;
+                    font-size: 22px;
+                    @media (min-width:768px) {
+                        font-size: 26px;
+                    }
+                    @media (max-height:600px) {
+                        font-size: 14px;
+                    }
+                    @media (max-width:500px) {
+                        font-size: 14px;
+                    }
+                }
+                .content{
+                    font-size: 16px;
+                    margin: 10px 0;
+                    padding-left: 20px;
+                    @media (min-width:768px) {
+                        font-size: 20px
+                    }
+                    @media (max-height:600px) {
+                        font-size: 12px;
+                    }
+                }
+
+            }
+        }
+        .right{
+            height: 100%;
+            img{
+                height: 60vh;
+                @media (min-width:768px) {
+                    width: 300px;
+                }
+                @media (max-width:538px) {
+                    width: 150px;
+                }
+
+                @media (max-height:600px) {
+                    width: 100px;
+                }
+            }
+        }
+    }
+    >.bottom{
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        p{
+            margin: 0;
+            font-size: 3vmin;
+            text-align: center;
+
+        }
+        .line{
+            margin: 5px 0;
+            height: 2px;
+            background-color: $main-color;
+        }
+        .line:nth-child(3){
+            height: 10px;
+        }
+    }
+}

@@ -1,0 +1,47 @@
+<div class="fourpage">
+    <div class="top">
+        <div class="space">space</div>
+        <div class="right"
+        :class="{'animate__animated animate__fadeIn animate__delay-1s':active}">
+            企業文化
+        </div>
+        <div class="left">
+            <hr
+            :class="{'animate__animated animate__lightSpeedInRight animate__delay-005s':active}">
+            <hr
+            :class="{'animate__animated animate__lightSpeedInRight animate__delay-1s':active}">
+        </div>
+        <div class="canvas"
+        :class="{'animate__animated animate__fadeIn animate__delay-005s':active}"></div>
+    </div>
+    <div class="content">
+        <div class="left">
+            <div class="deeds" v-for = 'item in data ' :key='item.index'>
+                <div class="title"
+                :class="{'animate__animated animate__fadeInLeft animate__delay-1s':active}">
+                    {{ item.title }}
+                </div>
+                <div class="content"
+                :class="{'animate__animated animate__fadeInRight animate__delay-1s':active}">
+                    {{ item.content }}
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <img src="/H5/2/img/fourpage/1.jpg" alt=""
+            :class="{'animate__animated animate__slideInRight animate__delay-001s':active}">
+        </div>
+    </div>
+    <div class="bottom">
+        <p
+        :class="{'animate__animated animate__zoomIn animate__delay-015s animate__slow':active}">
+            泳欣設計| YongXin Design
+        </p>
+        <div class="line"
+        :class="{'animate__animated animate__fadeIn animate__delay-005s animate__slow':active}">
+        </div>
+        <div class="line"
+        :class="{'animate__animated animate__fadeIn animate__delay-1s animate__slow':active}">
+        </div>
+    </div>
+</div>

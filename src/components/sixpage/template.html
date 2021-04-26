@@ -1,0 +1,43 @@
+<div class="sixpage">
+    <div class="top">
+        <div class="space">space</div>
+        <div class="right"
+        :class="{'animate__animated animate__fadeIn animate__delay-1s':active}">
+            企業文化
+        </div>
+        <div class="left">
+            <hr
+            :class="{'animate__animated animate__lightSpeedInRight animate__delay-005s':active}">
+            <hr
+            :class="{'animate__animated animate__lightSpeedInRight animate__delay-1s':active}">
+        </div>
+        <div class="canvas"
+        :class="{'animate__animated animate__fadeIn animate__delay-005s':active}"></div>
+    </div>
+    <div class="content">
+        <div class="container" v-for="item in data" :key="item.index">
+            <h2
+            :class="{'animate__animated animate__fadeInRight animate__delay-005s':active}">♦{{ item.title }}</h2>
+            <p
+            :class="{'animate__animated animate__flipInX animate__delay-005s animate__slow':active}">{{ item.content }}</p>
+        </div>
+        <div class="img-container">
+            <img src="/H5/2/img/fivepage/1.jpg" alt=""
+            :class="{'animate__animated animate__fadeInUp animate__delay-1s':active}">
+            <img src="/H5/2/img/fivepage/2.jpg" alt=""
+            :class="{'animate__animated animate__fadeInDown animate__delay-1s':active}">
+        </div>
+    </div>
+    <div class="bottom">
+        <p
+        :class="{'animate__animated animate__zoomIn animate__delay-015s animate__slow':active}">
+            泳欣設計| YongXin Design
+        </p>
+        <div class="line"
+        :class="{'animate__animated animate__fadeIn animate__delay-005s animate__slow':active}">
+        </div>
+        <div class="line"
+        :class="{'animate__animated animate__fadeIn animate__delay-1s animate__slow':active}">
+        </div>
+    </div>
+</div>

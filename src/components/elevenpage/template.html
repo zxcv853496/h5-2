@@ -1,0 +1,52 @@
+<div class="elevenpage">
+    <div class="top">
+        <div class="space">space</div>
+        <div class="right"
+        :class="{'animate__animated animate__fadeIn animate__delay-1s':active}">
+            企業文化
+        </div>
+        <div class="left">
+            <hr
+            :class="{'animate__animated animate__lightSpeedInRight animate__delay-005s':active}">
+            <hr
+            :class="{'animate__animated animate__lightSpeedInRight animate__delay-1s':active}">
+        </div>
+        <div class="canvas"
+        :class="{'animate__animated animate__fadeIn animate__delay-005s':active}"></div>
+    </div>
+    <div class="content">
+        <div class="container" v-for = " item in data " :key="item.index"
+        :class="{'animate__animated animate__flipInX animate__delay-005s':active}">
+            <p>
+                {{ item.name }}
+            </p>
+            <p>
+                {{ item.each }}
+            </p>
+            <p>
+                {{ item.pay}}
+            </p>
+        </div>
+        <div class="bottom-container"
+        :class="{'animate__animated animate__fadeIn animate__delay-005s':active}">
+            <p>
+                有意者請將簡歷投至
+            </p>
+            <p>
+                zxcv853496@gmail.com
+            </p>
+        </div>
+    </div>
+    <div class="bottom">
+        <p
+        :class="{'animate__animated animate__zoomIn animate__delay-015s animate__slow':active}">
+            泳欣設計| YongXin Design
+        </p>
+        <div class="line"
+        :class="{'animate__animated animate__fadeIn animate__delay-005s animate__slow':active}">
+        </div>
+        <div class="line"
+        :class="{'animate__animated animate__fadeIn animate__delay-1s animate__slow':active}">
+        </div>
+    </div>
+</div>

@@ -1,0 +1,92 @@
+.mainpage{
+    height: 100%;
+    position: relative;
+    
+    .img-container{
+        padding: 25px 0px 0px 0;
+        display: flex;
+        justify-content: center;
+        img{  
+            min-width: 150px;
+            max-width: 30%;
+        }
+    }
+    .banner-container{
+        margin: 20px 0;
+        padding: 10px 0;
+        overflow: hidden;
+        hr{
+            border: none;
+            height: 3px;
+            background-color: $main-color;
+        }
+        .bg{
+            background-repeat: no-repeat;
+            height: 300px;
+            background-image: url('/H5/2/img/mainpage.jpg');
+            background-position: bottom left;
+            transition: all 4s;
+            @media (min-width:580px) {
+                background-image: url('/H5/2/img/mainpage-1.jpg');
+            }
+            @media (max-height:670px) {
+                height: 200px;
+            }
+
+
+            &.active{
+                background-position: bottom;
+            }
+        }
+    }
+    .introduction{
+        margin: 40px 0;
+        >.top{
+            text-align: center;
+            color: $main-color;
+            position: relative;
+            h1{
+                margin: 0;
+                font-size: 9vmin;
+            }
+            >span{
+                font-size: 3vmin;
+            }
+            .brochure{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                margin: 0;
+                font-size: 12vmin;
+                p{
+                    color: #3d6adb1f;
+                    margin: 0;
+                }
+            }
+        }
+        >.bottom{
+            width: 100%;
+            position: absolute;
+            bottom: 30px;
+            p{
+                text-align: center;
+            }
+            p:nth-child(1){
+                font-size: 3vmin;
+                margin-bottom: 0;
+                @media (min-width:675px) {
+                    font-size: 12px;
+                }
+            }
+            p:nth-child(2){
+                margin-top: 0;
+                font-size: 4vmin;
+                @media (min-width:675px) {
+                    font-size: 20px;
+                }
+            }
+
+        }
+    }
+}

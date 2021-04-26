@@ -1,0 +1,143 @@
+.ninepage{
+    height: 100%;
+    position: relative;
+    >.top{
+        height: 80px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        .space{
+            color: transparent;
+        }
+        .right{
+            
+            line-height: 80px;
+            font-size: 24px;
+            color: $main-color;
+            @media (min-width:768px) {
+                font-size: 42px;
+            }
+        }
+        >.left{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            hr{
+                border: none;
+                background-color: $main-color;
+
+            }
+            hr:nth-child(1){
+                width: 100%;
+                height: 1px;
+
+            }
+            hr:nth-child(2){
+                width: 75%;
+                height: 2px;
+                margin-right: 0;
+            }
+        }
+        >.canvas{
+            left: 0;
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            background-color: $main-color;
+            transform:translate(-50%,20%) rotate(45deg) ;
+        }
+    }
+
+    >.content{
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 30px;
+        @media (max-height:650px) {
+            margin-top: 0;
+        }
+        .img-container{
+            height: 60vh;
+            border: 1px solid $main-color;
+            overflow: hidden;
+            .sub-container{
+                transform-style: preserve-3d;
+                position: relative;
+                bottom: -60%;
+                width: 100%;
+                height: 100%;
+                perspective: 400px;
+                perspective-origin: 50% -50%;
+                div{
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                    height: 40vh;
+                    animation: moveImg 6s ease-out infinite;
+                    img{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                    @keyframes moveImg {
+                        from{
+                            transform: translateZ(-1000px);
+                        }
+                        to{
+                            transform: translateZ(200px);
+                        }
+                    }
+                }
+                div:nth-child(1){
+                    animation-delay: 1s;
+                }
+                div:nth-child(2){
+                    animation-delay: 3s;
+                }
+                div:nth-child(3){
+                    animation-delay: 5s;
+                }
+                div:nth-child(4){
+                    animation-delay: 7s;
+                }
+
+
+            }
+
+        }
+        h2{
+            color: $main-color;
+            text-align: center;
+            margin-bottom: 10px;
+            @media (max-height:650px) {
+                margin: 0;
+            }
+        }
+        p{
+            text-align: center;
+            margin: 0;
+        }
+    }
+    >.bottom{
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        p{
+            margin: 0;
+            font-size: 3vmin;
+            text-align: center;
+        }
+        .line{
+            margin: 5px 0;
+            height: 2px;
+            background-color: $main-color;
+        }
+        .line:nth-child(3){
+            height: 10px;
+        }
+    }
+}
