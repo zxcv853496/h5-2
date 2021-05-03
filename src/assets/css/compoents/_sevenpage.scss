@@ -53,15 +53,21 @@
         width: 75%;
         margin: 0 auto;
         margin-top: 30px;
-        >img{
-            width: 100%;
+        div{
+            width: 90%;
+            margin: 0 auto;
+            >img{
+                
+                width: 100%;
+            }
         }
         .container{
+            
             padding: 5px 0;
             font-size: 3vmin;
             text-align: center;
             color: white;
-            margin: 5px 0;
+            margin: 5px auto;
         }
         .container:nth-child(even){
             background-color: $main-color;

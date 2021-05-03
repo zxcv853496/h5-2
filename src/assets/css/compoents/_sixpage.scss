@@ -73,6 +73,7 @@
             display: flex;
             justify-content: space-between;
             img{
+                object-fit: cover;
                 width: 45%;
                 height: 15vh;
                 border: 1px solid $main-color;

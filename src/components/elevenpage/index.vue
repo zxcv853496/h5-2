@@ -8,49 +8,24 @@ export default {
         return{
             data:[
                 {
-                    name: "項目經理",
-                    each: '3名',
-                    pay: '10K-16K'
+                    name: "形象網站-產品選色器系統",
+                    pay: 'NT$80,000'
                 },
                 {
-                    name: "諮詢顧問",
-                    each: '5名',
-                    pay: '10K-13K'
+                    name: "打造酷炫網站",
+                    pay: 'NT$8,000'
                 },
                 {
-                    name: "軟體工程師",
-                    each: '2名',
-                    pay: '16K-26K'
+                    name: "VVIP尊龍貴賓卡",
+                    pay: 'NT$3,999'
                 },
                 {
-                    name: "前端開發",
-                    each: '3名',
-                    pay: '10K-16K'
+                    name: "集點卡設計",
+                    pay: 'NT$2,000'
                 },
                 {
-                    name: "日語翻譯",
-                    each: '1名',
-                    pay: '6K-10K'
-                },
-                {
-                    name: "運營管理",
-                    each: '1名',
-                    pay: '8K-12K'
-                },
-                {
-                    name: "營銷經理",
-                    each: '1名',
-                    pay: '10K-16K'
-                },
-                {
-                    name: "市場專員",
-                    each: '3名',
-                    pay: '8K-12K'
-                },
-                {
-                    name: "市場經理",
-                    each: '1名',
-                    pay: '10K-16K'
+                    name: "個性名片設計",
+                    pay: 'NT$2,000'
                 },
             ]
         }

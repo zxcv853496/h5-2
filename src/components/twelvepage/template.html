@@ -3,7 +3,7 @@
         <div class="space">space</div>
         <div class="right"
         :class="{'animate__animated animate__fadeIn animate__delay-1s':active}">
-            企業文化
+            泳欣設計
         </div>
         <div class="left">
             <hr
@@ -18,11 +18,11 @@
         <div class="top-container">
             <div class="title"
             :class="{'animate__animated animate__zoomIn animate__delay-005s':active}">
-                UI設計師 (2名)
+                品牌設計 x 數位行銷
             </div>
             <p
             :class="{'animate__animated animate__fadeIn animate__delay-010s':active}">
-                10-16k | 北京 | 經驗不限 | 本科學歷以上
+                從品牌設計、網站架設、行銷規劃與支援<br />為您的品牌提出量身定制的解決方案。
             </p>
         </div>
         <hr :class="{'animate__animated animate__zoomIn animate__delay-005s':active}">
@@ -33,7 +33,7 @@
             </div>
             <div class="content" v-for = "(content, index) in item.content" :key=" content.index"
             :class="{'animate__animated animate__fadeIn animate__delay-012s':active}">
-                {{ index+1 }}.{{ content }}
+                {{ content }}
             </div>
         </div>
     </div>

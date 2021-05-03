@@ -8,19 +8,19 @@ export default {
         return{
             data:[
                 {
-                    img:'/H5/2/img/fivepage/2.jpg',
-                    content1:'2000mAH',
-                    content2:'持續使用20分'
+                    img:'/H5/2/img/eightpage/card-1.png',
+                    content1:'競速車業',
+                    content2:'黑黃設計'
                 },
                 {
-                    img:'/H5/2/img/fivepage/2.jpg',
-                    content1:'無限自由',
-                    content2:'全屋無塵'
+                    img:'/H5/2/img/eightpage/card-2.png',
+                    content1:'車次元',
+                    content2:'霧感設計'
                 },
                 {
-                    img:'/H5/2/img/fivepage/3.jpg',
-                    content1:'智能感知',
-                    content2:'重點清潔'
+                    img:'/H5/2/img/eightpage/card-3.png',
+                    content1:'李東根',
+                    content2:'大理石設計'
                 },
             ]
         }

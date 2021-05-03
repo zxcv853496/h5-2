@@ -8,19 +8,19 @@ export default {
         return{
             data:[
                 {
-                    content:'·國家專利392項'
+                    content:'·品牌介紹'
                 },
                 {
-                    content:'·台灣金馬獎6項'
+                    content:'·選色系統'
                 },
                 {
-                    content:'·全球世界獎1項'
+                    content:'·產品介紹'
                 },
                 {
-                    content:'·科技部專業領域獎5項'
+                    content:'·聯絡資訊'
                 },
                 {
-                    content:'·其餘獎項25項'
+                    content:'·共通任何裝置'
                 },
             ]
         }

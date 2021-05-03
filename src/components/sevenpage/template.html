@@ -3,7 +3,7 @@
         <div class="space">space</div>
         <div class="right"
         :class="{'animate__animated animate__fadeIn animate__delay-1s':active}">
-            企業文化
+            網頁設計
         </div>
         <div class="left">
             <hr
@@ -15,8 +15,10 @@
         :class="{'animate__animated animate__fadeIn animate__delay-005s':active}"></div>
     </div>
     <div class="content">
-        <img src="/H5/2/img/sevenpage/1.jpg" alt=""
-        :class="{'animate__animated animate__fadeInUp animate__delay-005s':active}">
+        <div>
+            <img src="/H5/2/img/web-system.jpg" alt=""
+            :class="{'animate__animated animate__fadeInUp animate__delay-005s':active}">
+        </div>
         <div class="container" v-for="(item, item_index) in data " :key="item.index"
         :class="delayContent(item_index+10)">
             {{ item.content }}

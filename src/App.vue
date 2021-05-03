@@ -30,20 +30,18 @@
         <div class="section" >
           <Threepage :active="active"/>
         </div>
-        <div class="section" >
+        <!-- <div class="section" >
           <Fourpage :active="active"/>
-        </div>
-        <div class="section">
-          <Fivepage :active="active"/>
-        </div>
+        </div> -->
+
         <div class="section">
           <Sixpage :active="active"/>
         </div>
         <div class="section">
-          <Sevenpage :active="active"/>
+          <Eightpage :active="active"/>
         </div>
         <div class="section">
-          <Eightpage :active="active"/>
+          <Fivepage :active="active"/>
         </div>
         <div class="section">
           <Ninepage :active="active"/>
@@ -51,6 +49,10 @@
         <div class="section">
           <Tenpage :active="active"/>
         </div>   
+        ////////////////seven頁面換到這邊
+        <div class="section">
+          <Sevenpage :active="active"/>
+        </div>
         <div class="section">
           <Elevenpage :active="active"/>
         </div>   
@@ -72,7 +74,7 @@ import './assets/css/app.scss';
 import Mainpage from './components/mainpage/index';
 import Twopage from './components/twopage/index';
 import Threepage from './components/threepage/index';
-import Fourpage from './components/fourpage/index';
+// import Fourpage from './components/fourpage/index';
 import Fivepage from './components/fivepage/index';
 import Sixpage from './components/sixpage/index';
 import Sevenpage from './components/sevenpage/index';
@@ -89,7 +91,7 @@ export default {
     Twopage,
     Mainpage,
     Threepage,
-    Fourpage,
+    // Fourpage,
     Fivepage,
     Sixpage,
     Sevenpage,
@@ -141,7 +143,6 @@ export default {
       this.active =! this.active
     },
     DelayTopLeft(index){
-      console.log(index)
         if(!this.active){
             return `animate__animated animate__fadeInTopLeft animate__delay-00`+index+`s`
         }
@@ -150,7 +151,6 @@ export default {
         }
     },
     DelayTopRight(index){
-      console.log(index)
         if(!this.active){
             return `animate__animated animate__fadeInTopRight animate__delay-00`+index+`s`
         }
@@ -159,7 +159,6 @@ export default {
         }
     },
     DelayButtomLeft(index){
-      console.log(index)
         if(!this.active){
             return `animate__animated animate__fadeInBottomLeft animate__delay-00`+index+`s`
         }
@@ -168,7 +167,6 @@ export default {
         }
     },
     DelayButtomRight(index){
-      console.log(index)
         if(!this.active){
             return `animate__animated animate__fadeInBottomRight animate__delay-00`+index+`s`
         }

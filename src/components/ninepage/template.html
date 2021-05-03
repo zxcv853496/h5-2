@@ -3,7 +3,7 @@
         <div class="space">space</div>
         <div class="right"
         :class="{'animate__animated animate__fadeIn animate__delay-1s':active}">
-            企業文化
+            名牌設計
         </div>
         <div class="left">
             <hr
@@ -17,25 +17,17 @@
     <div class="content">
         <div class="img-container"
         :class="{'animate__animated animate__zoomIn animate__delay-005s':active}">
-            <div class="sub-container">
-                <div>
-                    <img src="/H5/2/img/fivepage/3.jpg" alt="">
-                </div>
-                <div>
-                    <img src="/H5/2/img/fivepage/2.jpg" alt="">
-                </div>
-                <div>
-                    <img src="/H5/2/img/fivepage/4.jpg" alt="">
-                </div>
-                <div>
-                    <img src="/H5/2/img/fivepage/1.jpg" alt="">
-                </div>
+            <div class="sub-container" :class="{hover,hover}">
+                <div :class="{hover,hover}" @mouseover="mouseOver" @mouseleave="mouseLeave"  
+                    v-for="item in img" :key="item.index">
+                    <img v-bind:src=" item " alt="">
+                </div> 
             </div>
         </div>
         <h2
         :class="{'animate__animated animate__fadeInUp animate__delay-005s animate__slow':active}">2021全新產品</h2>
         <p
-        :class="{'animate__animated animate__fadeInUp animate__delay-005s animate__slow':active}">智能、創新、未來</p>
+        :class="{'animate__animated animate__fadeInUp animate__delay-005s animate__slow':active}">視覺、數位、行銷</p>
     </div>
     <div class="bottom">
         <p
